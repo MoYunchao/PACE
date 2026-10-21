@@ -1,0 +1,1690 @@
+{
+  "source": "main_charging_station/SenseSimulation_fix_v2/SenseSimulation_fix",
+  "files": [
+    {
+      "path": "models/inference/mappo/mappo_v4_mask_energy_safe_30k/config.json",
+      "sha256": "176113bf5377e022008cb9c795a608815c1077300666c8a733bda0f8733b84e3",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "models/inference/mappo/mappo_v4_mask_energy_safe_30k/models/best_model.pt",
+      "sha256": "fd5eacbacb26dbc36560da8500ec971ccbf7fe58cdfb9f3a1c9b70e33487854f",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/battery_sim/CMakeLists.txt",
+      "sha256": "e27a52f021cd916eb30e1e7d3f09ba087be6f4cfe0c50790712ea82eea303ba9",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/battery_sim/config/battery.yaml",
+      "sha256": "3d2330958bec019ea9502087b0611e043a8a20ab3621dc5c9266ad73d3f35218",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/battery_sim/package.xml",
+      "sha256": "62521e214bcabf02df320293dc6ec09fcafa554b8c0988446abe3a8ff552f6b2",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/battery_sim/src/battery_manager.cpp",
+      "sha256": "bbac950066fca53a587dff7b9e6f9271525b5bc218a1ef5800da52bfec1eadf5",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/battery_sim/src/battery_state_sim_node.cpp",
+      "sha256": "058fe5ae81828ae7931cb6fb12bdd659b0a2fa2a626dba8e61c8692ee277b26e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/clip_semantic/clip_semantic/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/clip_semantic/clip_semantic/clip_semantic_node.py",
+      "sha256": "2fcf8cd5b5715685a34beecbcc69efb710d7cfc9973306d942d664ddd612b9b1",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/clip_semantic/clip_semantic/oracle_semantic_mapper.py",
+      "sha256": "a4ad73969d5e0ff15edde3ebda99da7df916c91b1132bfc60344833bc2a0d51a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/clip_semantic/clip_semantic/semantic_map.py",
+      "sha256": "d7ffeba9328393e49920a98e75e55fbefb6af59cf0af50246962d264ae16c809",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/clip_semantic/config/static_semantic_grid_maze40.npz",
+      "sha256": "04419852ea38da522a1caac094566521ba34e5d0df0884c4368ad0dcc857d4f8",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/clip_semantic/config/static_semantic_grid_model.npz",
+      "sha256": "d3f122d6d271c70b8860f2da763cd3c9a80d78a1b199cf7bf2f5c15352f0783b",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/clip_semantic/config/static_semantic_grid_real.npz",
+      "sha256": "75f069403cea59060f655e355f786acf84cf9a365766256e58b4725f441fd22c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/clip_semantic/config/static_semantic_scores.json",
+      "sha256": "f6a3b6f21c76f2af62014ea996c052fef42ab8583b86cfaf08ad7e06bc2b6369",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/clip_semantic/launch/clip_semantic_launch.py",
+      "sha256": "ce3691aca2dc7836bfda447219a613058f52754b9665b791110bfb13a047914a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/clip_semantic/package.xml",
+      "sha256": "d5ee36aaf57d05bc9b583661efe173518a0f1a4e4f84995e6943b455790d561c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/clip_semantic/resource/clip_semantic",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/clip_semantic/setup.cfg",
+      "sha256": "fa6f0450a114fa4e3c04837353721e1e26492506a9e22f82a35e29eba783b9c1",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/clip_semantic/setup.py",
+      "sha256": "733e37a36ce1f135c277af779916d7a9d4b99d0c0ce49675503254018691b31b",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/clip_semantic/test/test_copyright.py",
+      "sha256": "ea71bbbc6247b5c14d176ed09f39ee274d563cc9b2ec355828ea451ceff31757",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/clip_semantic/test/test_flake8.py",
+      "sha256": "37a813a0507f0ce51a2d0b57312d2cc078a0307a3ca85580ea801b0d2f9755d2",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/clip_semantic/test/test_pep257.py",
+      "sha256": "e8b88d49ee296987b1b40069f81019b5fa09b1aa1bfee9a1faae45bb5cf53eda",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/.gitignore",
+      "sha256": "69530a26852de11b9766aa8fe84bfb5f81d3193c9727365587195415ba48fd8a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/README.md",
+      "sha256": "436a0231ebdb869592b20ffece5a9bb275192a9ecc7f7a871b0f0e5b137cb920",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/config/recovery_params.yaml",
+      "sha256": "3689400b52523223cdd041994ab246e5c344e365eb35a97bcddad0263eb13fad",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/config/robot_offsets.yaml",
+      "sha256": "be8c1b8312df1b950ee9cb227acfda2cc6c03ddf68ad0a47af4ed9d216727866",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/config/semantic_model.yaml",
+      "sha256": "0250969b1bd2046e24e09b5d6b798e7edecb3678a6a05b239a1f42ff52bcfa60",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/config/semantic_office.yaml",
+      "sha256": "d8be3cf38bc39a4dae2438df7a131cc1c2b5395a49d78f2d00c470a7db068623",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/cure_explore/__init__.py",
+      "sha256": "5ff1a4f9a42a02ca084b82627eeb96a655c77a9bcf7a04f4a8c99f051b50ad03",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/cure_explore/dynamic_tf_broadcaster.py",
+      "sha256": "d2e18e440f071a4e2381939f95762e7a1b91547d6e4396a8f62f7aebb44b18d4",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/cure_explore/map_tf_broadcaster.py",
+      "sha256": "534292af277a5bae54e04d183c6480d77cc5ff698c32b66426272eca2184b0d6",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/cure_explore/pose_config_server.py",
+      "sha256": "db12bdf0633725a70216d9e9237ee2195af902ddba427de2ca43bb0ffb05fd48",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/cure_explore/robot_position_publisher.py",
+      "sha256": "34dc74ec1f8fdce119477a096a8d78600583fc2e9dd08e1a59924e07b816c854",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/map/model/model.config",
+      "sha256": "2c1cd2a6cea10a05d7908ef84c1adb03d96a0e6f6404be36e9da64f06abbb932",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/map/model/model.pgm",
+      "sha256": "b695555ad0e93317a1dceefbbc1796a9354e55961e5ee58fbf836540e9b3e2c1",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/map/model/model.sdf",
+      "sha256": "0b2d7d6fa5bca9395a0cb702fedf2e69c2da05aaeffa844a053a4984ab7c17c3",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/map/model/model.world",
+      "sha256": "548727a5faee325c83246d2efa0e784ffd185a385e1d4732cf2393c2579b5f03",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/map/model/model.yaml",
+      "sha256": "2b8f1ea6caad150ad9d7e2975ed46b1ace9c0265231f9a31ef867b654c57d8ec",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/map/office/office.pgm",
+      "sha256": "5d8bc93360001abe87c2508a23e853426a7776a0b6afb698bf008d7d36ea2d61",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/map/office/office.world",
+      "sha256": "432f40eeedc11241aedc1a2a2f27985969df5b533e44d43e93a8c5ca86cce3ee",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/map/office/office.yaml",
+      "sha256": "549694785794049e420e7b857735ae3190984b6c1dfbe107741d1b7c4f42dfa4",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/package.xml",
+      "sha256": "f450f0bbb029b53565169973dddf6f83fd85a8cb35df345907bc5fb2ba5e989c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/resource/cure_explore",
+      "sha256": "eb35f6546e0fe8ecadb80a29fc64c5161a71477d1f75c7736a76d501c4e9f856",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/rviz/cure_display.rviz",
+      "sha256": "e983534182349d0e502bee17c70ebb6b1a8bc88828d0abefe5442f6c80d28d57",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/rviz/rl_training.rviz",
+      "sha256": "9d22c36802591582a4c84b04647a98e4985c2931e24b700448a1d0996d1ff44a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/rviz/semantic_editor.rviz",
+      "sha256": "183ffb8111881c424d6491207c7555e8bd4371095ce9964bc15928905b24f39b",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/setup.cfg",
+      "sha256": "6285e6f773fe70fd36acf615e5809554bfcbb377dbef052803207376f62d9523",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/setup.py",
+      "sha256": "c9df999ecf9200c735a0c25d34f7f391624554d7b9a65646acc40ce723273e5c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/test/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/test/activate_rl_nodes.sh",
+      "sha256": "d19b78cd270b009273242a27f7fecb04946d16b24978e8bec55d5db0235b89db",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/test/clean.sh",
+      "sha256": "c32cedbdfb7c34b8b8860153d4352a826822884ceac010360389f705a0b20268",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/test/test_package.py",
+      "sha256": "19fd081f51be48d5d17bdd46bf7b73266467073ca2bf64f6c63411e0b844680a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/test/test_recovery_manager.py",
+      "sha256": "ea8304d98e957ae73b0a9de34d6359d799b2957edcd5a6ef6bbcded39e3bf850",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/test/test_service_single_call.py",
+      "sha256": "334ba29cdde7692beb0a964c42d9552a602eb8e30cca12238a0c6bce064a34ee",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore/test/test_system_reset.sh",
+      "sha256": "4bfd80910e7ded797017405a5c46d3650312573e3b1f94c935ae0d9da4681b52",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_cpp/CMakeLists.txt",
+      "sha256": "4e71c7a6dba0a073535ada64c0b89d84ec4980bad80406a4b3de992d73892916",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_cpp/include/cure_explore_cpp/map_merger.hpp",
+      "sha256": "970b050bee6fcee7569e8935bf9ca3208fdb7b5b7604d7876602ddc46ab91d32",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_cpp/package.xml",
+      "sha256": "e7221a28ac4d570e3c02051ba410a63bb8ffa837586bec3fc824201f129c2bfc",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_cpp/src/map_merger.cpp",
+      "sha256": "7b4016bfa7b5aa5cffd1c1fc624f0991e10f848a66d2ccba48d87de032d625e9",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_cpp/src/map_merger_node.cpp",
+      "sha256": "78c1b1bd0fd0f158342a062549a645af55a89254d496a79d5b38be0b3b4d0d93",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_interfaces/CMakeLists.txt",
+      "sha256": "5d7f5aae65c5e86f6513f55a5afa23ea5b6ff7a1883948ca11fc2d5d96054d1e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_interfaces/msg/CostInfo.msg",
+      "sha256": "d8ba6f085b8b28dabd91efba9339ca251d7fc2fac411ba7dd370dc86968f2a82",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_interfaces/msg/FrontierArray.msg",
+      "sha256": "b42d21f4aad45619e1537a68a45b93513a26dc7b0298fd773438a22e4bd5efd7",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_interfaces/msg/FrontierCluster.msg",
+      "sha256": "30e79b0015969762c44a650804cbbed46a724f5894e14041f786d93384a50f31",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_interfaces/msg/FrontierCost.msg",
+      "sha256": "d32b2a8a011728c49087172ab4c3e70a17766b9becaaff73671091d74296e8e0",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_interfaces/msg/ResetAck.msg",
+      "sha256": "f67729225406e8d47a112a103c845e5c7823a743a91ca5873def638866d1cab6",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_interfaces/msg/ResetCommand.msg",
+      "sha256": "193bbc6a53cd8381511cb3a97d31cb5f8a7a8ed41aed21e22570a378b6439b4b",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_interfaces/msg/RobotPose.msg",
+      "sha256": "6d499f02391678c5ebdc7ba738a4dffa2508793de702c98d631790f24f0eebe6",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_interfaces/msg/SemanticMap.msg",
+      "sha256": "a7368bf23d79d8eb5895a60d15272158aaf0c65ea1695708c6c6f9b78c597cb2",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_interfaces/msg/SemanticObject.msg",
+      "sha256": "9d32e97e6acedb9c54c737cf8f0fb3d72ad2a056b25b64b7dc52ed217ebb5c93",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_interfaces/package.xml",
+      "sha256": "5aa9e07e1bd1cba4d891f3551d848848236dc58e4ed711900865eb61176fe437",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_interfaces/srv/ComputeFrontierCosts.srv",
+      "sha256": "8fd673a172b8f4bf1622ed8a74013658f4cde674071419763875c08ffe85e8d7",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_interfaces/srv/SetRobotPoses.srv",
+      "sha256": "0a74721cef3fbd6d77cebbb3989bfcb4666d73aab887e892d1ae8c48e625133c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_interfaces/srv/SystemReset.srv",
+      "sha256": "0bf379c54fe80f1023f98074c47f907c6ef67982866103809f79b27aa4db9db2",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/cure_explore_interfaces/srv/ValidateGoal.srv",
+      "sha256": "d958143157262f85c6475fb6f3f3a36e9700c541ac872be3875b6864f9c90e14",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/follow_the_gap_recovery/CMakeLists.txt",
+      "sha256": "fb959d0db9dfe0b3dd88361a3dc6f4facd1d27884328e8c8f1e28ea6cf61a2fc",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/follow_the_gap_recovery/action/FollowTheGap.action",
+      "sha256": "6950cef8e9ecbf634ca900b73e7396d81c4324aa4db2299758d77fdda36b9d3e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/follow_the_gap_recovery/follow_the_gap_recovery_plugin.xml",
+      "sha256": "828f7b1244e20f92b621307c1bd8bd850f0ae771ca6dcb9dc16f062b4e287cf5",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/follow_the_gap_recovery/include/follow_the_gap_recovery/follow_the_gap_recovery.hpp",
+      "sha256": "a14c0eaddf9e1fdc50cfe5ba0567c835c1444b41ae526bfb7ef1c2c2b3677f7a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/follow_the_gap_recovery/package.xml",
+      "sha256": "de6c46e2efc8a1627998d0062ad2c015dc586328a011eff4ead8712e7c333578",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/follow_the_gap_recovery/src/follow_the_gap_recovery.cpp",
+      "sha256": "613add361121b1cc8f5581fa5d495deaff30591aac5634ec2600c1c837754cd2",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/frontier_msgs/CMakeLists.txt",
+      "sha256": "31c0c0760163490ef70190b47c0e0773eed51889085e2bb3cbd82a005429d7ed",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/frontier_msgs/msg/FrontierArray.msg",
+      "sha256": "9a2d85e2abb58b30c9c6487a561b3c3040e0d07870d8c026dbd280380261983e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/frontier_msgs/msg/FrontierArrayExtended.msg",
+      "sha256": "bd2d8bba1ad384c2a177cf7a62ff7c06f00620a14a403bd036355510f020becb",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/frontier_msgs/msg/FrontierInfo.msg",
+      "sha256": "d8bbf990821f5934be735ce9400bc55d73a91b1093a8ed7c52db624a2fa34e8c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/frontier_msgs/msg/FrontierInfoExtended.msg",
+      "sha256": "f951c390c90f67aea6b391d465e35e3097bced48fc818ba2b034259d4676d43f",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/frontier_msgs/package.xml",
+      "sha256": "7d7a94383aa5d6237e482d5332e14f410ef23e27318279a550f6145d5510e48c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/fuzzy_decision/CMakeLists.txt",
+      "sha256": "02f714a4e8397cb986d3c06e99dd339b2d0d4cc4297d5f9a9fcb3a761780266e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/fuzzy_decision/config/fuzzy_decision_params.yaml",
+      "sha256": "6cf83b2d5f98a979283556bd3afe34c38dd13c7f38e6700074cdf612730b4a7f",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/fuzzy_decision/launch/fuzzy_decision_launch.py",
+      "sha256": "a0fdd428c618f415e699a6816cc352edabfca9bf77c418a4e69e5ec9e8c825c2",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/fuzzy_decision/package.xml",
+      "sha256": "9b96c4e2fe2b67f98dbc960e4dc06e456a3e0677dd7d92585380654c15ad2084",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/fuzzy_decision/rviz2/nav2.rviz",
+      "sha256": "197d43b1b67d7355fc977133f7433d00c50e533e37f18544fac03f787978d373",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/fuzzy_decision/src/fuzzy_decision_node.cpp",
+      "sha256": "859fbb2353fb0a17f78950d77558404f4016dba2b62a362f456aa5b1db9e424d",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/fuzzy_decision/src/greedy_decision_node.cpp",
+      "sha256": "bf1b49d7a9477ed109c5ef4be457e90c32659e94ac6606750fe4867bea069da8",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/fuzzy_decision/src/linear_decision_node.cpp",
+      "sha256": "e376e1a579baa7a952796284f3ac39739e53ff9a47933167528e41010fad8c52",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/fuzzy_msgs/CMakeLists.txt",
+      "sha256": "97344be3c20460be234bbceee5506962a043210b997438a965bb7803d7dfa7fa",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/fuzzy_msgs/msg/FuzzyPriority.msg",
+      "sha256": "31edfc054fa6d78777182d9a7b9a3687d391d135261670a731c37569608ba92f",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/fuzzy_msgs/msg/FuzzyPriorityArray.msg",
+      "sha256": "b8a79a9097adc1ee21a3228c9069c81ba91c4f1514111f59ea22b0c2883803e9",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/fuzzy_msgs/package.xml",
+      "sha256": "3d6370942fcf5ca12e664a32402cd4148de3038ee8a183491be5136956b642cf",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/goal_select/CMakeLists.txt",
+      "sha256": "a757996f1b9a27624fb91db92a003376880164809e15ec022816befdd746e5ce",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/goal_select/LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/goal_select/package.xml",
+      "sha256": "0b6a7adc2f91fdbb27e209eb58c02668220d02ae04e7e4f8d09918a93623a2e4",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/goal_select/src/multi_robot_goal_selector_node.cpp",
+      "sha256": "e7037eab26a025b71b3c80171b7dec3970c58000cec562189fc3f469f2851885",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_laser_simulation/CMakeLists.txt",
+      "sha256": "8803b9e7712164672352ffc42d0a57030be8356b55e6ed3ce20831a8a3ad1e30",
+      "modified_for_packaging": true
+    },
+    {
+      "path": "src/livox_laser_simulation/LICENSE",
+      "sha256": "2b73e13c08cd7e23aad9b7c8bccedee62249e95464539bcb9b255bf22eef1ab8",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_laser_simulation/README.md",
+      "sha256": "89a297b1dc5a006da5b966607e7c21c754c2e272e4efe7dbcb8a6deda98adee4",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_laser_simulation/include/ros2_livox/csv_reader.hpp",
+      "sha256": "7dbe05282839126be97654ca2acb4a27b715ff4df933c77770c13e0de9366427",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_laser_simulation/include/ros2_livox/livox_ode_multiray_shape.h",
+      "sha256": "bee710fc7b8e94aecf8111f4f6a3a00c77e6f4ef85121d9e8a019e075185614f",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_laser_simulation/include/ros2_livox/livox_points_plugin.h",
+      "sha256": "fbaf1e4c8d1a1e9f5e6085673bce8f00a2128bac3059bf57b32dbc132ab1ce83",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_laser_simulation/meshes/mid360.stl",
+      "sha256": "38176bdda33a9a5bdb122cc42c93825bc4e5be1bc1d43b48e6ecb252fa89803c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_laser_simulation/package.xml",
+      "sha256": "360bd60984a6bb4fd51d5a312d2bfb02b90ebe3c629b1d670518e143c55c795a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_laser_simulation/scan_mode/mid360.csv",
+      "sha256": "aa1fc08b6a4400608dbd6ee832b7ea3a9c3c37197e734f60f58fe5abf762269a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_laser_simulation/src/csv_main.cpp",
+      "sha256": "63e5b6444f9adc1896ef4dddfd62a58a1b6a8c24721d13ef7d57d89a2a987995",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_laser_simulation/src/livox_ode_multiray_shape.cpp",
+      "sha256": "94d3c2dd81b0057c951dbc12a216f0fda08a0807914bace30e560f0d16c84e5a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_laser_simulation/src/livox_points_plugin.cpp",
+      "sha256": "a21d37eb9f5c8e2a5b6ee96683cb577c2f07e02577dd0e6cdbfeaa7dd2ca14af",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_laser_simulation/urdf/mid360.xacro",
+      "sha256": "f4a2432dfd4d0ff09e0350605831aac3baeba4645a525982e4302a80bdbc38d2",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/.gitignore",
+      "sha256": "0722becabef5c682384b5cff460a0fce3efe2363b6dfaec1d9639743c7010c87",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/LICENSE",
+      "sha256": "a946d3817f76720598b0291283b146b62c10185dfff1c8c6c3dad060e65b205a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/README.md",
+      "sha256": "049ac0c2593bfd908a32914fae5283609a4233d193edbf5eaafcf57f0f5b9a82",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/allocators.h",
+      "sha256": "49b554ebfc2369438fd9365b28f0453485d936437847de31a7bb770001abca55",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/cursorstreamwrapper.h",
+      "sha256": "de1a52b674c998a7581f9cb69c9310757f825595c3fef985d5d153f7ac1b6aaf",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/document.h",
+      "sha256": "6afae6a8825b03b4c6baa42a513e5a5242ac96b4c95968c07ee8bda8163eb3ff",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/encodedstream.h",
+      "sha256": "4bb5e4853943d5ead467e46b5313d95aa23645018cda93e7907a934a06cfbb26",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/encodings.h",
+      "sha256": "0201c664e471c615b5cd27d2e981cf8b21ac9c210bdf108062fb2fd9d493a501",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/error/en.h",
+      "sha256": "484dcd32c0b35b7a81561740fad970402c0ffcec44311381a2fb265cfe5e273c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/error/error.h",
+      "sha256": "aa9b40b61754b227248b4b092331dbd5721ef6565d962e4c225c6c1e7974817e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/filereadstream.h",
+      "sha256": "8c7d282eb32897969430f5a94178cab238433e25fa139ee74eda87eb1d42690a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/filewritestream.h",
+      "sha256": "1db49a4cd9038f2670667e5900f346d231a0eece06ac1817f33feb63f33545b9",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/fwd.h",
+      "sha256": "2a0e024b8b6b87d1d3f50d1d0dd4656124c161fea88406265d097d613498854e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/internal/biginteger.h",
+      "sha256": "0be8375c2d39bc1f8f57b755a26569db9ed35c86d066b294911690513786afb3",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/internal/clzll.h",
+      "sha256": "93d71c879a805a8c17cfd8913cf1add4d2f25407bbf668abe1dcca6e40ebc746",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/internal/diyfp.h",
+      "sha256": "f2c45af9e73a451e5472e5dd10a7672085e9a3504d1f3ab864a5b9cc7445c1eb",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/internal/dtoa.h",
+      "sha256": "965deca8d1382c30db9e0a1d51200a4934bfe032eda3dcde10d4bdb39817c05a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/internal/ieee754.h",
+      "sha256": "a1b4a88d5e0f633e99c7d68a34fdebc6289e6be0f0cfba452a7793166d7ea970",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/internal/itoa.h",
+      "sha256": "45c96bab2327aee5ff999167fac8f768a3a9e1003142fa68e3aee50b54d93e12",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/internal/meta.h",
+      "sha256": "a20dad578c7d714ff04029f04719df19be5835c30bf9c7028d226e67d065bf0b",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/internal/pow10.h",
+      "sha256": "7a7693969c936ddb6d036467a0f6b53def076922bb838d250eb40f12b2e2ce0e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/internal/regex.h",
+      "sha256": "624cf078b8179a198374eebe94331aa2d8b70b08997f4e270ccfaccc90fd09b2",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/internal/stack.h",
+      "sha256": "46c4f98ff2acce64d1280458dd1224aaee9a9035eebd3462cdf31ee25a13702e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/internal/strfunc.h",
+      "sha256": "e083b68f7bf3570653fce1e3ea0a573a75745a096dd80194e1a2fde4d7695bb8",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/internal/strtod.h",
+      "sha256": "2134c15ad40b9584ecb8e1a7f6163277a6d783574b3fb08574f88ab769b91751",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/internal/swap.h",
+      "sha256": "48ecb57c3b2ca955ad3cccdfff03835be495a56c9c5da07ab9c02f488b7d7fe1",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/istreamwrapper.h",
+      "sha256": "b3c03a5826b8d8c9dfcef64eb09d8ec4a955e0c6edd38d9c3a127dbca53ec2dc",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/license.txt",
+      "sha256": "a140e5d46fe734a1c78f1a3c3ef207871dd75648be71fdda8e309b23ab8b1f32",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/memorybuffer.h",
+      "sha256": "cf661606aa41bee3466cee20174bc7454210e8aabac929b1d8e9e189fef601ab",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/memorystream.h",
+      "sha256": "8dd07eb66381de95a69c9cadce537d76c0349f913cfe183ab6243c54863c4dcf",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/msinttypes/inttypes.h",
+      "sha256": "92f53d3ba0cdebaeb20a52893f89d0c29aae5111a3a8bb555eabdd8c96e3244f",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/msinttypes/stdint.h",
+      "sha256": "515ff5e244372892293c20bbfe6a5b3dcca7265442941df31dcebdfbe2a828fe",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/ostreamwrapper.h",
+      "sha256": "366d953184777b0de0a102ef38cf56f9fc766422246f16be9af2dad8ad787054",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/pointer.h",
+      "sha256": "d74ab63c76a99a5a92418d2420cc733c22767b6d9e9a6f989689940de4f7c478",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/prettywriter.h",
+      "sha256": "e8495e521c5d726c7e2ff59b1f7eb6f08a1e0298055d1fbbc4f29f08d736360d",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/rapidjson.h",
+      "sha256": "22ffbcb054cecc5180bdb72478ab32598c9aa40421322f17923809acdcf99629",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/reader.h",
+      "sha256": "291f6d315a3617c9bd83d8b2836f9dc1e45a2a9770dcb0745f9eaaa603b715a6",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/schema.h",
+      "sha256": "473b44fcb9f88d2fa7439e1c9f86899deae44205323a7ba7709e6b4b513f01fa",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/stream.h",
+      "sha256": "58e37336dafded31177eb2381f0d553de8a5fd33c8580873de32b0e467d85677",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/stringbuffer.h",
+      "sha256": "8434f52ca786bf876b3d3d693ce8e2d399325ddf891e0437becd41ed590806e9",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/3rdparty/rapidjson/writer.h",
+      "sha256": "b42eca28a42d7b3806aaf691ee921accabcf911be6728c35fa04e14162a72bdf",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/CHANGELOG.md",
+      "sha256": "b5abf4f88cd797a9f1cdf22c3cc0a162f7a56d60e3493fe26b944e69bf31e98c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/CMakeLists.txt",
+      "sha256": "6aed33488ec9df6ab3b3f463c105a76690fa59f0c7923f0019c18ea778fafa5c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/LICENSE.txt",
+      "sha256": "5d965fd1439196751d5ccad8064a51dafdb2d88548174bb5516d393c7a4c0717",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/cmake/version.cmake",
+      "sha256": "698b065d680a20695f2163ca5bbe601792b24069357919bee3136768d75f8f7f",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/config/HAP_config.json",
+      "sha256": "956414d48bf17af2427e2b8f3dbbeff92345f93fe81e97422f22117ea0ef3f35",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/config/MID360_config.json",
+      "sha256": "bbdcc2be470e2b5cf94af3024ce8295a87e5a9a8d7d400434bc18ec8e69fcfb6",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/config/display_point_cloud.rviz",
+      "sha256": "ae7cea85c28bcb532f3504994aa287ad14100048cd53b30821b73df0a1f94e61",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/config/mixed_HAP_MID360_config.json",
+      "sha256": "99895013db7bfc1d58fef1abb2d25461624ab468bce5f5c4381172f3b7d235cf",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/launch/msg_HAP_launch.py",
+      "sha256": "bb58699d0b6d344f579f5b2991db54561621ddb395e6ade8c94425c563cd9ef6",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/launch/msg_MID360_launch.py",
+      "sha256": "92fb57bce306f9c4441e22eb8bc0d7c0952829c03b5d104db76b3fa194b9f8c9",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/launch/rviz_HAP_launch.py",
+      "sha256": "8830a8ae44da8581a3698daf340ae69391ca611fdfc52b961b692adf1ad04cb9",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/launch/rviz_MID360_launch.py",
+      "sha256": "db9cd1f0dc0caf3099bf84c1c39761a5a24609b47ba928208ae4f8670b069b8e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/launch/rviz_mixed.py",
+      "sha256": "e4065cc13be96921da560ecf6143fc515510a063fd85c9387ecb472942c01477",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/lib/liblivox_lidar_sdk_shared.so",
+      "sha256": "d83b634956813d7cdf8b43b976c85e047c34c4dfeea1976328c381597065eb8e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/msg/CustomMsg.msg",
+      "sha256": "f42d6709db951b1fa307e929e742c0593cbf0d1b0ff977d2ed63ad8d7cee0a96",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/msg/CustomPoint.msg",
+      "sha256": "b64b31a8edc8c8b3765d82b5d3ccd2d2e1f217b9525ef7007ab918674c619c59",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/package.xml",
+      "sha256": "084b1db3a68ef3cf979da0c8ce6a8bf9566dc586ebfdd51d0dbe012f43c3d2dd",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/call_back/lidar_common_callback.cpp",
+      "sha256": "8f37b7dda4236edbcb4a87cfa6a016e4105ca1e0b8e0e99f2446953636412196",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/call_back/lidar_common_callback.h",
+      "sha256": "e0fd66f13ad20b0426b9b5384abee61c8b2b85ace2e9904c470da9fd7c0cc366",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/call_back/livox_lidar_callback.cpp",
+      "sha256": "3c89ef3bbcc78488b1117421ff05d0100d5ff4867df5c6752e68f4f8b364f635",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/call_back/livox_lidar_callback.h",
+      "sha256": "cd484274d87f1cc43c0a2b72a9d04d728db37369238e43b72c83de80f34abacf",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/comm/cache_index.cpp",
+      "sha256": "dca25f47674f530249e94c0ac8ac368d122910ca66336bd1bee65a06d2f01667",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/comm/cache_index.h",
+      "sha256": "65c635bd6903564bc1e0547113a6aff52e592c16295ed23264b5726317327c01",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/comm/comm.cpp",
+      "sha256": "73e6b7469337528ffb60b0f670bedc3c01dfcd7d8a048e72e8f04bd5d839f126",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/comm/comm.h",
+      "sha256": "72c639ba1d6eaf7c355050672c865c7615cea3619abee628683d98920fb31fa4",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/comm/ldq.cpp",
+      "sha256": "b5a11f2b4b658e4fc2c53dc261a7401e09516a6276e9b1a9c7568a4ee6d86a3f",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/comm/ldq.h",
+      "sha256": "01ccf8d13f84475cb126dea1f15546a59ce9398968360e6484da5832729aa077",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/comm/lidar_imu_data_queue.cpp",
+      "sha256": "7f9ecbdad433653233b2701dbd06dd4f7f523d0e972cc5cb4bf0aca2ed7494b5",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/comm/lidar_imu_data_queue.h",
+      "sha256": "cc8ae6d425cf6fb173b59072e5310f7b984e776a9d8277c8e9e0ef9d9dc58998",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/comm/pub_handler.cpp",
+      "sha256": "5cdfe1505656482904f59576860f423ffb41c6a0bc8c79523ee845ddf244b666",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/comm/pub_handler.h",
+      "sha256": "130223127322db6315db89514e774de4122f3f861926999e55d8f6deb6910f69",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/comm/semaphore.cpp",
+      "sha256": "7ea77d2b2b9f5aca1aa1c4f239d427398699b504a25b5bcd1667545650a0c587",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/comm/semaphore.h",
+      "sha256": "a07dedf139d6a1f85d572b23f4a69b1f0574577366b2ecd759f06da4995eadcb",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/driver_node.cpp",
+      "sha256": "2367146dbf888b8eb6ac661792c3858ae7c2f8bb3136888fbbaee7593f1c1a1c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/driver_node.h",
+      "sha256": "1c9dbdd6e6ece51ad122200c364607fbc5c1a657e9f990b144010df7ebcb985b",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/include/livox_ros_driver2.h",
+      "sha256": "b344ecdbe8a80b4bbe6cc5ba72a49dbf9dec979d283b43fcd2f36669acd48efa",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/include/ros2_headers.h",
+      "sha256": "16aa2833be3b35acb0bbb9c71e78e261f65d7251740565571ae24d2c43b579d1",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/include/ros_headers.h",
+      "sha256": "dd0b6e99e519c05bbea515ac4c10cb3ab4e20a7af71c348889ed8078f91ed0f6",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/lddc.cpp",
+      "sha256": "a38faa7642a84a26181210db5308d5e972b728e3588a387e3555a282a1c610a2",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/lddc.h",
+      "sha256": "d8ecd637d1a0fe008c0cd6b9300aa36d95a682b1ffea0e058e58765080080f91",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/lds.cpp",
+      "sha256": "a53c0f737a61282c523a00bbdc5a76bfbb7ed5616fc5bbb4265bc64ca0853efe",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/lds.h",
+      "sha256": "090334fb09e5b9a946042af06abe46d0f5a098b9978527b42ac1d0b7ce022b63",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/lds_lidar.cpp",
+      "sha256": "0a59842dfe2ec09384190d5c61917ae9f06444305b1a3a76311ee9e3bdb091e3",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/lds_lidar.h",
+      "sha256": "6b94cb2956ec36028d445500741914bccec05cc1e352fc73d269e21051e42990",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/livox_ros_driver2.cpp",
+      "sha256": "93b269a8b3c4e194c734d2f1e2b645ea8367956681111a2ca06ef1c4a78b6d63",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/parse_cfg_file/parse_cfg_file.cpp",
+      "sha256": "f893a7397f05e81826d6097233ae6a90d3428f921ceb04d9f957427f4bcf7e5e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/parse_cfg_file/parse_cfg_file.h",
+      "sha256": "c0512f0ddb732861ec152e93d7d6477dd620865b4a92c385379d013286506998",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/parse_cfg_file/parse_livox_lidar_cfg.cpp",
+      "sha256": "ce7cc5df5f7e09768a2d256f0d1cae30ae9c6214d821be95036311cef08912ed",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/livox_ros_driver2_humble/src/src/parse_cfg_file/parse_livox_lidar_cfg.h",
+      "sha256": "0ad28cf4977f6c9c07aa23dbac80f66ba4da7680042ba59f8d0d794d78d262f8",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/map_postprocessor/CMakeLists.txt",
+      "sha256": "8c71b80837f18ec2bf6bfe66349082cf5459031e22ea7eee14529d8a64d1c84e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/map_postprocessor/include/map_postprocessor/map_postprocessor.hpp",
+      "sha256": "382fb7b2f7ae56412be76108cb3ab11970497c4d086c09fe33fdcfea13203d67",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/map_postprocessor/package.xml",
+      "sha256": "86db59a8a18b9f34beef6beae645793a413a7f5a7fa3f93b894e4060f1ff3d28",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/map_postprocessor/src/main.cpp",
+      "sha256": "b49bf243d1501b7fd05c0ceee9f45781b1724299da174b0cb296e280cf38cbc3",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/map_postprocessor/src/map_postprocessor.cpp",
+      "sha256": "1dd26fc29dd95d5446cedef7d2c96a46698518e59252f87cc219df24be677adb",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/multi_robot_navigation/CMakeLists.txt",
+      "sha256": "f840208d82d7fd4ab9341c5f5f71b27c4f35b16e31518973e063be4f3673f2cc",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/multi_robot_navigation/package.xml",
+      "sha256": "a90ccc0de7846432d3741965cf69a779316653b7c6cc04cf3375ed1ee8e13864",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/multi_robot_navigation/src/minimal_task_navigator.cpp",
+      "sha256": "5fff6624c83e4f8da4323e7b4d7bbc181d1877472ce0b959dc07bad51d289d3d",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/pointcloud_to_laserscan/CHANGELOG.rst",
+      "sha256": "ec7a03672e81ca302eff45eb0825da4d62fa5339779788a1e55e602fa467e2a3",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/pointcloud_to_laserscan/CMakeLists.txt",
+      "sha256": "3beb5bc36040c187ef5ac9b8cc5a6a7afea29be502dfa70f63d60a73b3a389be",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/pointcloud_to_laserscan/LICENSE",
+      "sha256": "6273b9e0f2e944f7c3f024205dab05f907ba0489fdf42c8caa61e0ddcf63be47",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/pointcloud_to_laserscan/README.md",
+      "sha256": "5c005900ce3f58855c3fec57addf4735ff68467fd242d95bd81246b9b6e99f1e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/pointcloud_to_laserscan/include/pointcloud_to_laserscan/laserscan_to_pointcloud_node.hpp",
+      "sha256": "bf0b05dfc80fcb67b52f46a502593c2bd5b4a9db0a4f32a964f8c696dc586924",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/pointcloud_to_laserscan/include/pointcloud_to_laserscan/pointcloud_to_laserscan_node.hpp",
+      "sha256": "480d7e01f224ca1c8ec1fcb913404b1e891e9afe375f1177eaebcfdb78eae3c2",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/pointcloud_to_laserscan/include/pointcloud_to_laserscan/visibility_control.h",
+      "sha256": "feb3319264011bb6964b97ae392f837cad98dc6079d6d8d44102ae00bab39409",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/pointcloud_to_laserscan/launch/pointcloud_to_laserscan_launch.py",
+      "sha256": "716a392d69611ecbbf2b2c581c9d54954fa56dea6517a8fe0bcd959e8991d75e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/pointcloud_to_laserscan/launch/sample_laserscan_to_pointcloud_launch.py",
+      "sha256": "4802e8ea5264e0b273167d9e506bb8ba336d166653903d2540a9f7e541c711db",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/pointcloud_to_laserscan/launch/sample_pointcloud_to_laserscan_launch.py",
+      "sha256": "d45fe2ab2ff1dfbf6dc63131a94306770ae08bb564a2f53c2d695989f6b8546a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/pointcloud_to_laserscan/package.xml",
+      "sha256": "e7b9c0f1a688db3b51237ee16fff9a0ecf30e3f0cf1c8e202796bcce120401c7",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/pointcloud_to_laserscan/src/dummy_pointcloud_publisher.cpp",
+      "sha256": "eece1e62fb3d21a7e63c38897e75869ef6bfe25fba978a5fa2532845bbe94e0b",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/pointcloud_to_laserscan/src/laserscan_to_pointcloud_node.cpp",
+      "sha256": "ec70a970d22c8058cb77015c0eed11a0156054ab232e469aea1003a104a6b6d5",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/pointcloud_to_laserscan/src/pointcloud_to_laserscan_node.cpp",
+      "sha256": "8cc0fa6edf3091273205347bea0009459590a9f3a3a4e1a1453c747708db6b84",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/resource_monitor/config/resource_monitor_config.yaml",
+      "sha256": "f4a45cc669309ddaabd42cc1b69fbc22a3ce99a265fa4f9fcfb73c7d44b312f1",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/resource_monitor/launch/resource_monitor.launch.py",
+      "sha256": "1c4bcf4c31502603a9a05abad69dc4b2f963b9804b084264611605e9228fc437",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/resource_monitor/package.xml",
+      "sha256": "32034f6919a7f4977d98a92c0f10256cf894e6a0647f4c15ae7d0242df1bd289",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/resource_monitor/resource/resource_monitor",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/resource_monitor/resource_monitor/__init__.py",
+      "sha256": "0c231764ce56c87c860be4f3c84ee3db48c3530c0bf522eb189b203c8db4c74f",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/resource_monitor/resource_monitor/backends/__init__.py",
+      "sha256": "e2af6bdbe6fd329906188c8f848fdc6d26f5a1a1e219c6d3fa454c6195a9af43",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/resource_monitor/resource_monitor/backends/real_backend.py",
+      "sha256": "f94b2a532d2290edd75bfa10552c6a2ad2b3fab2d377e8b233687af0fda269ad",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/resource_monitor/resource_monitor/backends/simulated_backend.py",
+      "sha256": "5b3281d0b120aee4407753cd432f60f00938df77c273cac84103a78b0b5e2d4f",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/resource_monitor/resource_monitor/resource_monitor_node.py",
+      "sha256": "3a7c55c134e49e2ce85b7805c6993e51d291cfaefab788128d88c5cd7d1fca38",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/resource_monitor/setup.cfg",
+      "sha256": "f03247dbaf8a52a846596582250d0bd4dadeac65112c0c33238ba70b0a7f467e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/resource_monitor/setup.py",
+      "sha256": "bc4285a04ad9e722da392b8db53e54f2dc520b7cefa3b6c29e6d82b7c8edb613",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rgbd_to_map/CMakeLists.txt",
+      "sha256": "02822b5f9d8ed3d74da0de6073f5496c346bea363614fb90893f403d2052c9bd",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rgbd_to_map/launch/rgbd_to_map.launch.py",
+      "sha256": "d983ade65249ffef85137fd4d0b9dfeb56ebcf7c52862ab18ecfb8bb9a16caaf",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rgbd_to_map/package.xml",
+      "sha256": "4fb6a1773b42a6abfb7039470123c2ecb059305af0c3acfb52ed92b4b800cf06",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rgbd_to_map/src/camera_pointcloud_to_laserscan_node.cpp",
+      "sha256": "ddd17fc6206a60a1f693c88570dafff346da1860866c914b44e03248df4ec7b5",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rgbd_to_map/src/frontier_detector.cpp",
+      "sha256": "d22022440816830a7824bc0db11979c6e7c89b4bac42d2e72d3f452860a90fe4",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rgbd_to_map/src/laserscan_frame_transformer.cpp",
+      "sha256": "771dc3ebe881a462fd90454b53cb34f453bbccb2bb319c956c8acc55dd3ea283",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rgbd_to_map/src/rgbd_processor_node.cpp",
+      "sha256": "dc130cb628f1fe4806450f13da181eff31198a9c68d5e92496f8d9eb81eb3092",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rgbd_to_map/src/scan_mapping_node.cpp",
+      "sha256": "7f1249465c99c38239ce7f952ae0975a6df1e27e7ab74536652b10d0b5f863a3",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rl_training/launch/rl_training.launch.py",
+      "sha256": "69eddffbc8d02ca010d4dfa20169fa40976fc605a059d17c83170eb927d78776",
+      "modified_for_packaging": true
+    },
+    {
+      "path": "src/rl_training/package.xml",
+      "sha256": "76d4d05995bc67ae3590df8e532a485c2eace56c434f9340781174c2b6ef9d69",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rl_training/resource/rl_training",
+      "sha256": "e16f1596201850fd4a63680b27f603cb64e67176159be3d8ed78a4403fdb1700",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rl_training/rl_training/__init__.py",
+      "sha256": "6cbe75d1c29523ae68d35d5561eadb8a03c9e50cc2cfb9ae645222ee21d2ef48",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rl_training/rl_training/charging_station_coordinator.py",
+      "sha256": "2d5255a2807706335f51d928ea6c2069873c4a28a82ddafc65e6b07517c276fe",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rl_training/rl_training/infer_mappo.py",
+      "sha256": "706eb860ef7c45e9d98ae12d39f6ae7bb9007267c2da9b971961890a2b7c950a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rl_training/rl_training/mappo_policy.py",
+      "sha256": "86b29d10c3c83e4e3e5c892fa559f430d09a2397a392fb1c2fc9e4ae237a5f96",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rl_training/rl_training/rl_global_state_node.py",
+      "sha256": "61a266d7aaa9f957333b42120e714e869b09440d7c47459e1860d626c4ea3f41",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rl_training/setup.cfg",
+      "sha256": "94336868d4e537527cdaf6efbe6732cae7b36eeb9010d81e85ad0fb0a4639a4a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/rl_training/setup.py",
+      "sha256": "2dce3691007025aec925c5879868457572c87e92ee0f0e52889ceaa017915fa2",
+      "modified_for_packaging": true
+    },
+    {
+      "path": "src/robot_navigation/CMakeLists.txt",
+      "sha256": "48ae639e35916daaa9db0b434ad979da8374e0280af5d3af29143e11b9af76d8",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/behavior_trees/navigate_to_pose_w_replanning_and_follow_gap.xml",
+      "sha256": "13a1dc51c981747d3aa932ea293f94d8d4812c542ba5d60b95654893488aec1a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/behavior_trees/navigate_w_replanning_and_follow_gap.xml",
+      "sha256": "d0f3be4a8da5b6a74410ccb702596d043794eb15e63c8da0e6ce9d2f70ffa2d8",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/include/robot_navigation/follow_the_gap_action_bt_node.hpp",
+      "sha256": "aa4a6bd7540ba36507358cd14e357ff136d1ee657b96c5e958518cbd53198dde",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/launch/bringup_robot_navigation.py",
+      "sha256": "710c78cc80d9bf466a19ad72f2401d8ccfeb5d33d0ac251632c05dab9d2cd0bb",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/launch/localization_amcl_launch.py",
+      "sha256": "a94f35340bcbcde9fb6a37bccca5cf659da5708c21ecaad7afa67b203bc32dc3",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/launch/map_server_launch.py",
+      "sha256": "17a1b5d30e3bed1fcd43c17aac11656db7a17ec999ec26e89aaf839e9550c5fa",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/launch/navigation_launch.py",
+      "sha256": "d6d8c9507c0a287f4d6e3bd32f4f1edc4c4a398b7fe56024db39ea429295334c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/launch/robot_sim_slam.launch.py",
+      "sha256": "abdd88f9aa9369821f73d785e7d6808ed2faf6766cc05f974b1e511349d83d85",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/launch/rviz_launch.py",
+      "sha256": "300aa2cb6538ab14ad6917c7cad9b666e62069fcaff8e224d839d05b826a09c8",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/package.xml",
+      "sha256": "86fca9e66f7fe78801fd39cb8fc8e4099c9ebc62e174409dd38ae82bff676b7e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/params/mapper_params_online_async.yaml",
+      "sha256": "915d9a8b7b5823c9288370ccaa1c46ac85024c454d17b1454a8dca74e83da69b",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/params/nav2_params.yaml",
+      "sha256": "2095314e4f00cf122307a08adeb4a21cf08f6cce3cbdae0482d0e64442da2a53",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/params/nav2_params.yaml.bak",
+      "sha256": "def3805132584258e3a383c138496b4d6ad755f4db8ac0af53d289318f868b92",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/params/nav2_params_mppi.yaml",
+      "sha256": "a469d8b98c0bc085fd7f4416a88cfce40b55d6f2094ca45da101ec791ce00cfd",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/params/nav2_params_mppi_robot_0.yaml",
+      "sha256": "512a3027834fc0af138d10bc84a7c8f13e489e3e0d3a59bdece5042ed6e17dd4",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/params/nav2_params_mppi_robot_1.yaml",
+      "sha256": "fbc22d18160ddf739bf0ba16f57484ca4603a0abff3e1a71d6e621a5d42d5323",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/params/nav2_params_mppi_robot_2.yaml",
+      "sha256": "c729495548909771308c49a731c8bea684196f43641d4fe678486650941e3b3d",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/params/segmentation_sim.yaml",
+      "sha256": "fd9dfd44d1cffba8109aa6db44c19982363fc843e12ccecd9476a49bd51e780a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/rviz/nav2.rviz",
+      "sha256": "866768d4bdfe3957edb8317946cab2550257f0de0c6952bbbd77c7ca67dcf8ab",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/rviz/nav2_minimal.rviz",
+      "sha256": "6e2674520e30f31e2863b4fa06dae04d55b939370ec5a60805ffa920ce669b0b",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/scripts/initial_spin.py",
+      "sha256": "ec543a5d7a0f8ba5a7695ddfdd29dbbbe49e2879275d1268e956457ad2fe32d1",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/scripts/odom_to_tf.py",
+      "sha256": "b6ecf48ba9507c175adf4676d5a718cf1eb0b3ec7730d1b5a02912828d7fae6d",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/scripts/robot_lifecycle_manager.py",
+      "sha256": "1a632f6a072df833119b6103944bfc818206d4c9cf23460822a646eaf39c9e27",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/robot_navigation/src/follow_the_gap_action_bt_node.cpp",
+      "sha256": "1355cf23dc5e4d4a6a3156ab9662a58ea52958f5b47084867abb2d290038e2c8",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/semantic_grid_msgs/CMakeLists.txt",
+      "sha256": "408e794fb56288d2522607bd0de64d9480a1f4dce43ec12819b285e48e18ec41",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/semantic_grid_msgs/msg/SemanticGrid.msg",
+      "sha256": "6ee03749791d7e7ba6bcefe938ccbea83122cdfe7ad2fba448153ab7a8430356",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/semantic_grid_msgs/package.xml",
+      "sha256": "114088127675763e482751f11b32e2c18d5963019ea013e5535f981576b7dc88",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/CMakeLists.txt",
+      "sha256": "0db740cd609f3755ef2fada9872e53b389c6dd7b50a5917365f9d612fc1d9cee",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/config/fuzzy_decision.rviz",
+      "sha256": "0793edf1b14d4a6a1fb9a18b86586ebbf9c120126fd1338001bb802a3bf7fb99",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/config/robot_initial_poses.yaml",
+      "sha256": "e1e3b9b645d1ed1b3d7aa41dba6ac304e76fffceae8c3d953bc67456b3fe1e36",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/config/robot_initial_poses_maze40.yaml",
+      "sha256": "d9592c3a5df4ef116e223e65321ce1f86bd6a52b6f2c8b224148000bb855d8bc",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/config/robot_initial_poses_office.yaml",
+      "sha256": "07b0e7bab16433cd04893d554b59eac466e20cd6d1f6598f10a86567db497bed",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/config/robot_initial_poses_real.yaml",
+      "sha256": "7be182e7cc1d1c70142d3a1118085bf65c8b994c3b1a1a08c9064bac38784c4a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/config/robot_initial_poses_tongfang.yaml",
+      "sha256": "d6ea8e949aabe4b3d7c822da3c303828818bf4038a1eb8dd3f907cd7285a92f6",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/full_exploration_system_mappo.launch.py",
+      "sha256": "14c3748b2cc89c6946c7c171c055842b4f26eb73bb888a9bf3789223c6c54461",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/full_exploration_system_mappo_maze40.launch.py",
+      "sha256": "beb87cb62b00d287a9e118f070577d13fcb2d75e20dafd4f3d8005d4e8bd6a7b",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/full_exploration_system_mappo_real.launch.py",
+      "sha256": "5b46c6d63efcce6e964543528c0d8bf72146943a1a7f73ad1d0e643584a1aa86",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/maze40_multi_robots_explore.launch.py",
+      "sha256": "44eca7fda9bc1a9d839ee5357a64bd04497029fa963b30c9b380be148e6b0cec",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/maze40_simulation_bringup.launch.py",
+      "sha256": "0d3f9c3d8dfd8dee532d3e6d1575ee64536db454621413c7de60ca9864da3009",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/multi_robots_explore.launch.py",
+      "sha256": "67e77329640e457ab715622ad21c8b3a1b7f96949c84cf96f4bd6b6feaa8b29c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/real_multi_robots_explore.launch.py",
+      "sha256": "71cc543a453a7a34c1ed5e0fc92640864905902f77771b574205a2a205c85ab2",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/real_simulation_bringup.launch.py",
+      "sha256": "b1813fc5eea6275923ea579b6ba6a3f0b99e73710d4a22165890b1bd499e49c0",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/robot_0_fuzzy_decision.launch.py",
+      "sha256": "c50fc98cf315a3c56ecad7c61d3334846a6c6995912bf2de71e29450874626ce",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/robot_0_slam.launch.py",
+      "sha256": "c20fff0712b37c31923294a335943091cfb61756c724be0453fd0242b54a8ac9",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/robot_1_fuzzy_decision.launch.py",
+      "sha256": "4fe88bfc5ca700b8456f84b30ba1b651448c274eeff1ceb10456f39f07f603fd",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/robot_1_slam.launch.py",
+      "sha256": "c333b5b228e852c628d098cae028cad8e225df09e95525ec28bde4c96fff5410",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/robot_2_fuzzy_decision.launch.py",
+      "sha256": "31bf475ac1655444b6e49eeff768f133f68bee14dd25e031a966f576997757b6",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/robot_2_slam.launch.py",
+      "sha256": "50a1f06d33c12839369d4983d110887b4e0b6435cd1de7bdb0beea1a45265ba8",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/robot_fuzzy_decision_maze40.launch.py",
+      "sha256": "a71edf53397dbdbc791d8665d03cbcfd2bb239be5060aded9733cc62186e2d4c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/robot_fuzzy_decision_real.launch.py",
+      "sha256": "703219b47933c4ee2f8faacf391ad4b155c6cc294f3dacebdb00c3759f17b9eb",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/simulation_bringup.launch.py",
+      "sha256": "a4ac6938f49bf39348a21bd12c5c422f51af5e2c9e5c3336ced527c30623c903",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/models/water_patch/model.config",
+      "sha256": "d9546dcb3509f34ad9bd7d8e644c45895e8684144bde6a6040bf073c4b6f9351",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/models/water_patch/model.sdf",
+      "sha256": "b64327d8d09c0ec9f9edcc5f0fbc4e267ffb1922ca766458613b62db88d29695",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/package.xml",
+      "sha256": "544f1ae9141350fae4ac6266fd92b1d53e0a05383beb8d6c384828e7411755b8",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/scripts/exploration_supervisor.py",
+      "sha256": "aea07a9c240027cb55649a7b04da1ad6fc86b931efade805d7db4b8d5c9bc6d0",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/scripts/simulation_pose_publisher.py",
+      "sha256": "feb9be30af7fc4458187db37f60b318121918f28de17c3730a7467447783b372",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/scripts/trajectory_snapshot_recorder.py",
+      "sha256": "db0465b941ae3723991206c5ac38f8f274a8fa711c453279be173a3430443946",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/urdf/sensebeetle_original.xacro",
+      "sha256": "2cae20a0c461b0017ed16dd8812a50d6b1cf8927bf32c186290e5b277462780e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/maze40/maze40.pgm",
+      "sha256": "937e9267c8a6dfc5c73d373a4698c04ec6c7b379ef05543ca75c209b85cdbcc4",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/maze40/maze40.world",
+      "sha256": "f6b65bf0c660f96a3f3bc5165f7f584d7adebd2e94dc6da05b67931698487550",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/maze40/maze40.yaml",
+      "sha256": "6123d1e809edd53242cc402c4bb4afd8ae1736d95634112be48d8d18c2e67bc6",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/maze40/maze40_semantic.world",
+      "sha256": "d9a7959cc00f1dfffb7c9cce216b60e6e1ac927562aed9384f05468918d8f4a1",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/model/model.world",
+      "sha256": "fca2c494fb24b12d7e94a000b7725b8768b965ab82ea4ea49128aeb1d5a4d597",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/model/model_semantic.world",
+      "sha256": "4236aaf6b28405f638f3864f611a2d407bc9797eee855638a4d4b2571007ca78",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/model/world.pgm",
+      "sha256": "137c3d19e51a73d9b562822d70cbc28ea43523a19ba3eebc62eebcc0544452af",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/model/world.yaml",
+      "sha256": "36d4a6647b49d5b47bcd3caf4abd814518a62d26d7e5c8024f5220aceb8c10cd",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/real/real.pgm",
+      "sha256": "0d434f741c9a95e12df878cb165bf0c86a18997a97153d083207a820d5d2a42c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/real/real.png",
+      "sha256": "20771caa4db2f5ac3f0e690cd28e755efc8bfbc9481c619e7d2e15152f3348c9",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/real/real.world",
+      "sha256": "9855631ace051a942095ecdcb075b20a5b6a7b002d9ebb1c81d2672cc439b4d9",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/real/real.yaml",
+      "sha256": "49f2b18966351c3655a116828da0532e0d61badf9885a414632aa25d31690b1a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/real/real_from_world.pgm",
+      "sha256": "57dbe6b84495bac3ea17cb4340faf90ac51fcecd45b503fcf6a0c8cef76ed6a6",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/real/real_from_world.yaml",
+      "sha256": "df94bc4a70192cb8d721d5e6f2a2d4d9c9259df91a46f77680623229f712bfd5",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/real/real_from_world_diff.png",
+      "sha256": "caba5dd78251de3201541a8201c559baf8aa6bb3cb97887af7549f10bad4df85",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/real/real_from_world_preview.png",
+      "sha256": "d05e95269b2d91cf9339294e470c82786b87d94f5881598a923e51c1ed64c04a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/world/real/real_semantic.world",
+      "sha256": "f56ab7693977846f792c47b7e2d3758d6f970e9e0914b8bd85f12b0767f7a20c",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/yaml/mapper_params_online_async.yaml",
+      "sha256": "3476f88f7e2f363e639808839c91cb81171ea962d3836e9d002d91d70a47d98e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/yaml/nav2_params.yaml",
+      "sha256": "2095314e4f00cf122307a08adeb4a21cf08f6cce3cbdae0482d0e64442da2a53",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "start_all_mappo.sh",
+      "sha256": "ba2c84192b90eafed448e3ee18464e8a23d724d988a5ee58c55f336945378159",
+      "modified_for_packaging": true
+    }
+  ]
+}

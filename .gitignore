@@ -1,0 +1,14 @@
+build/
+install/
+log/
+logs/
+output/
+data/
+__pycache__/
+*.py[cod]
+*.bag
+*.db3
+*.sqlite3
+.DS_Store
+Thumbs.db
+compile_commands.json
