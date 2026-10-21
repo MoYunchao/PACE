@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>pace_ablation</name>
+  <version>0.1.0</version>
+  <description>Fixed-weight feature information ablations for PACE inference.</description>
+  <maintainer email="1197829412@qq.com">MoYunchao</maintainer>
+  <license>TODO: License declaration</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>frontier_msgs</depend>
+  <depend>fuzzy_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>python3-yaml</exec_depend>
+  <exec_depend>simulation_bringup</exec_depend>
+  <exec_depend>rl_training</exec_depend>
+  <exec_depend>robot_navigation</exec_depend>
+  <exec_depend>multi_robot_navigation</exec_depend>
+  <exec_depend>goal_select</exec_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>
