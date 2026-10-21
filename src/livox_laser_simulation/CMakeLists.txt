@@ -19,7 +19,6 @@ find_package(sensor_msgs REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(livox_ros_driver2 REQUIRED)
 find_package(Boost REQUIRED COMPONENTS chrono)
-find_package(Protobuf REQUIRED)
 ament_auto_find_build_dependencies()
 
 ###########
@@ -41,8 +40,8 @@ ament_auto_add_library(ros2_livox SHARED
 target_link_libraries(ros2_livox
     RayPlugin
     GpuRayPlugin
-    protobuf::libprotobuf
-    Boost::chrono
+    libprotobuf.so.9
+    libboost_chrono.so.1.71.0
 )
 
 #############

@@ -17,14 +17,15 @@ PACE 主方法的 ROS 2 推理与 Gazebo 探索工作空间，包含预测返航
 Livox 仿真插件依赖 `livox_ros_driver2` 消息，因此保留该驱动源码及原有许可证。
 驱动构建还要求系统安装 Livox-SDK2 **头文件与库**；目录中的 `.so` 单独存在不代表
 SDK 已安装。安装说明见 [驱动文档](src/livox_ros_driver2_humble/README.md)。
-仿真插件的 Protobuf/Boost 链接改为 CMake 查找目标，避免绑定旧系统的库版本号。
+CMakeLists 保持原版，包括原有的库版本设置。
 
 ```bash
 source /opt/ros/humble/setup.bash
 # 若使用已有的 torch 环境，请同时确保该环境能导入 rclpy。
-bash build.sh
+bash toBuild.sh
 ```
 
+`toBuild.sh` 为原有构建脚本，会删除当前目录的 build、log、install 后重新构建。
 必须在本机重新构建；运行脚本会自动加载当前目录的 `install/setup.bash`。
 原始代码里的导航参数包含历史路径，主启动链中的 robot_*_slam.launch.py
 会通过 RewrittenYaml 注入当前工作空间的行为树路径。
@@ -99,5 +100,5 @@ RESULT_ROOT=/absolute/path/to/results bash start_all_mappo.sh --map default \
 上传整理阶段进行了 Python 语法、Shell 语法、启动文件引用和模型完整性核对。
 整理环境没有 ROS 2 / Gazebo，因此尚未进行本版本的 colcon 构建和仿真运行。
 原运行源码与检查点的来源校验见 `SOURCE_MANIFEST.json`；
-其中标明了为精简入口、记录配置及兼容构建而修改的源文件。
+其中标明了为精简入口及记录配置而修改的源文件。
 第三方组件保留各自的许可证和说明。

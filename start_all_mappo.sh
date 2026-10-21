@@ -28,7 +28,7 @@ fi
 
 set +u
 if [[ ! -f install/setup.bash ]]; then
-  echo "Build this workspace first: bash build.sh" >&2
+  echo "Build this workspace first: bash toBuild.sh" >&2
   exit 1
 fi
 source install/setup.bash

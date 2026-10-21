@@ -523,8 +523,8 @@
     },
     {
       "path": "src/livox_laser_simulation/CMakeLists.txt",
-      "sha256": "8803b9e7712164672352ffc42d0a57030be8356b55e6ed3ce20831a8a3ad1e30",
-      "modified_for_packaging": true
+      "sha256": "a51105a88bc382986a1c5cd744954029ec3ecb86bf50cdc41d82a67411ea15de",
+      "modified_for_packaging": false
     },
     {
       "path": "src/livox_laser_simulation/LICENSE",
@@ -1683,8 +1683,13 @@
     },
     {
       "path": "start_all_mappo.sh",
-      "sha256": "ba2c84192b90eafed448e3ee18464e8a23d724d988a5ee58c55f336945378159",
+      "sha256": "bdcfea20364477b1f4ae959e2a571a55a2d67de4ac43bcefb81fdf2e8fec1686",
       "modified_for_packaging": true
+    },
+    {
+      "path": "toBuild.sh",
+      "sha256": "cf9c83cbd253680277dc687e1d4d7eae65ba4c21d7043df60c2abb0d56e79e3d",
+      "modified_for_packaging": false
     }
   ]
 }
