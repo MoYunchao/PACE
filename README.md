@@ -5,7 +5,13 @@ PACE 主方法的 ROS 2 推理与 Gazebo 探索工作空间，包含预测返航
 本版本由 `main_charging_station/SenseSimulation_fix_v2/SenseSimulation_fix` 整理，
 保留三个场景（30×30、40×40、室内地图）和当前默认 MAPPO 检查点。
 不包含 ACE、Bandwidth-MRE、Burgard 等对比方法的策略、模型，以及旧 MAPPO 检查点、
-训练代码、实验结果、构建产物或嵌套 Git 历史。当前尚未加入四维特征消融。
+训练代码、实验结果、构建产物或嵌套 Git 历史。
+独立新增的四维信息消融见 [FEATURE_ABLATION.md](FEATURE_ABLATION.md)。
+
+原目录中的分步启动脚本、`start_all.sh`、`start_all_greedy.sh`、
+`start_all_mappo_linear.sh`，以及 `tools/`、`scripts/` 工具已恢复，
+对应的 launch 文件一并保留。恢复的脚本保持原样；原版说明文件中的历史路径和
+参数说明也未改写。新增的实验记录功能仅由对应的新入口启用。
 
 ## 环境与构建
 

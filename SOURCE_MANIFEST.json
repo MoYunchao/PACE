@@ -2,6 +2,11 @@
   "source": "main_charging_station/SenseSimulation_fix_v2/SenseSimulation_fix",
   "files": [
     {
+      "path": "map_merge.sh",
+      "sha256": "925c1149bc54089272b9f29c79735ce1af78b9257a627b67dd4b281ef12d6be3",
+      "modified_for_packaging": false
+    },
+    {
       "path": "models/inference/mappo/mappo_v4_mask_energy_safe_30k/config.json",
       "sha256": "176113bf5377e022008cb9c795a608815c1077300666c8a733bda0f8733b84e3",
       "modified_for_packaging": false
@@ -9,6 +14,46 @@
     {
       "path": "models/inference/mappo/mappo_v4_mask_energy_safe_30k/models/best_model.pt",
       "sha256": "fd5eacbacb26dbc36560da8500ec971ccbf7fe58cdfb9f3a1c9b70e33487854f",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "robot_0_fuzzy.sh",
+      "sha256": "03fbd0a5983d93dca00c57976bff1aeb4391617904e0de85ea42e632e1eaa5c7",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "robot_0_slam.sh",
+      "sha256": "fefc9444aa0cf0cf48899dd6fe8d30cbf3aab41c4d49e425fdd083210b2c2830",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "robot_1_fuzzy.sh",
+      "sha256": "569800c4fdff2b14b087e245168b5d8313f84383c6f34137ccd7d0e1cbf6ebba",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "robot_1_slam.sh",
+      "sha256": "f5756072bb93c54fbe88ce22f705306605e8653d17ef74945a49cd11b6242c27",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "robot_2_fuzzy.sh",
+      "sha256": "8afe1cda53278c718953d15d2a61fc0ad044d21aa8c408b91bc64411c73560d2",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "robot_2_slam.sh",
+      "sha256": "52095195dafd7aa5d1282e6d4974c99ee4cbba968251baa7bd296eeed614e44a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "scripts/exploration_gain.py",
+      "sha256": "a3c1317c316581e009ad146c02d97971491dcebf4a9b96298900108c20abee9e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "simulation_env.sh",
+      "sha256": "e521f9031070d57fa686423d103fae113dbf6b312773d2c347245aa555ead04b",
       "modified_for_packaging": false
     },
     {
@@ -1467,8 +1512,43 @@
       "modified_for_packaging": false
     },
     {
+      "path": "src/simulation_bringup/launch/full_exploration_system.launch.py",
+      "sha256": "2a78418b897bb65028cb02b3a64a3c381b7b84864fd36b7e815ed04e4fe04942",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/full_exploration_system_greedy.launch.py",
+      "sha256": "6a8ccb16e20648e1cc4ea64d9da8aa3b6e9a374645d4291ca054e1e609905b24",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/full_exploration_system_greedy_maze40.launch.py",
+      "sha256": "2ba5457768098188d7c1d54dc5a66195ce29ff3cd5ec5f295b429b63c6a63294",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/full_exploration_system_greedy_real.launch.py",
+      "sha256": "205152d150ffb69d1e2fce6e0a3c7fa180f9edba8981ff1402957244e1a01b36",
+      "modified_for_packaging": false
+    },
+    {
       "path": "src/simulation_bringup/launch/full_exploration_system_mappo.launch.py",
       "sha256": "14c3748b2cc89c6946c7c171c055842b4f26eb73bb888a9bf3789223c6c54461",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/full_exploration_system_mappo_linear.launch.py",
+      "sha256": "19ba128364a30a161cb9c21598c7b8b4ec22079002b8e13e49b9aea89f9b2810",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/full_exploration_system_mappo_linear_maze40.launch.py",
+      "sha256": "e7f9233093704674c5c5d0661e321b2b7359b1b4aa5cee55f6e2a617a9a2c2d2",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/full_exploration_system_mappo_linear_real.launch.py",
+      "sha256": "16f06c93934ca22544399b34649cc6d9c9f49165bd8654403240444f7e286a2a",
       "modified_for_packaging": false
     },
     {
@@ -1479,6 +1559,16 @@
     {
       "path": "src/simulation_bringup/launch/full_exploration_system_mappo_real.launch.py",
       "sha256": "5b46c6d63efcce6e964543528c0d8bf72146943a1a7f73ad1d0e643584a1aa86",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/full_exploration_system_maze40.launch.py",
+      "sha256": "ad608c5137ce79129a9e173d0f649c1d33e471ac6437571078865ccb71a11ef7",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/full_exploration_system_real.launch.py",
+      "sha256": "1799f5becff1eb46074e47676b46653e490122dbfd3002ec88b32dd97b9cbbe9",
       "modified_for_packaging": false
     },
     {
@@ -1512,6 +1602,16 @@
       "modified_for_packaging": false
     },
     {
+      "path": "src/simulation_bringup/launch/robot_0_greedy_decision.launch.py",
+      "sha256": "f016f38adfc459d4b226c02ac202729a12044d509c7eeb889be6bcc03a9a9f80",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/robot_0_linear_decision.launch.py",
+      "sha256": "8cb48acaec17af95f0c94ad6d799d3f73ef547c30d698223f993ab88f1e04856",
+      "modified_for_packaging": false
+    },
+    {
       "path": "src/simulation_bringup/launch/robot_0_slam.launch.py",
       "sha256": "c20fff0712b37c31923294a335943091cfb61756c724be0453fd0242b54a8ac9",
       "modified_for_packaging": false
@@ -1522,6 +1622,16 @@
       "modified_for_packaging": false
     },
     {
+      "path": "src/simulation_bringup/launch/robot_1_greedy_decision.launch.py",
+      "sha256": "47eae06135ffd92e4803e430465be9de9039501257f7a753541d25663a838a92",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/robot_1_linear_decision.launch.py",
+      "sha256": "bccf1d1cb4b3b6b61313f97efef816be302b7c5063370bf7b61c6f2aa92ea679",
+      "modified_for_packaging": false
+    },
+    {
       "path": "src/simulation_bringup/launch/robot_1_slam.launch.py",
       "sha256": "c333b5b228e852c628d098cae028cad8e225df09e95525ec28bde4c96fff5410",
       "modified_for_packaging": false
@@ -1529,6 +1639,16 @@
     {
       "path": "src/simulation_bringup/launch/robot_2_fuzzy_decision.launch.py",
       "sha256": "31bf475ac1655444b6e49eeff768f133f68bee14dd25e031a966f576997757b6",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/robot_2_greedy_decision.launch.py",
+      "sha256": "77bbf09b9a4b48b4415096fc07713531c79416dae56d93fad0b82f44d30aad72",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "src/simulation_bringup/launch/robot_2_linear_decision.launch.py",
+      "sha256": "3b61cc38137486cb55dbc85cb720cce15694632590badeac91f98945405dd91f",
       "modified_for_packaging": false
     },
     {
@@ -1682,13 +1802,123 @@
       "modified_for_packaging": false
     },
     {
+      "path": "start_all.sh",
+      "sha256": "8c13c96638f2556e916c21721db5a97daf980bfa65ee13c36f8406c7d346ffe8",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "start_all_greedy.sh",
+      "sha256": "371ea711615d9ff8b38e713646feb0f3fb8cb0dce20dfb4b7fda4de430e0a99a",
+      "modified_for_packaging": false
+    },
+    {
       "path": "start_all_mappo.sh",
       "sha256": "bdcfea20364477b1f4ae959e2a571a55a2d67de4ac43bcefb81fdf2e8fec1686",
       "modified_for_packaging": true
     },
     {
+      "path": "start_all_mappo_linear.sh",
+      "sha256": "e53686697fb3a7e551a85207811a1c8494810d573ca9845092d6127ccdf7bfbb",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "start_goal_select.sh",
+      "sha256": "1be59e3a20681a096e466b23f6794c0bc5d608e434c3ff16fd425730fe9a928e",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "start_multi_explore.sh",
+      "sha256": "81050e9a18989bf4d33ccfd81728d2cf9346038a1e8fbc6fe917ea29602c5a44",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "start_robot_0_fuzzy.sh",
+      "sha256": "23b06b4666ce6f318ce654fb4daeb1d4d666b97c1f0d97f4b86cc3a337b84e47",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "start_robot_0_slam.sh",
+      "sha256": "3ac35951f8a967d43cbb306a7ded1d01d0ebaf8de5aea55c28523744fa92678b",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "start_robot_1_fuzzy.sh",
+      "sha256": "1ed3462a49607571b5e50b9499b62ef74804c6e3fbeeb82110804e379eec3a8f",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "start_robot_1_slam.sh",
+      "sha256": "fbcf63164e984c1e244dcb0268d9f7747b83d753415fab17695e22b3a8f86d04",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "start_robot_2_fuzzy.sh",
+      "sha256": "9756b46e79811ba7b472a838ca774202cc089a6a6e0edc372151d5d9ab09a5d8",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "start_robot_2_slam.sh",
+      "sha256": "e26d9ee5a6855d9b3d59d7e66060347972edf9a2227bd62847dbdd033a1d6ef4",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "start_rviz.sh",
+      "sha256": "11c5c4789ecd920bb1773e3c0063962652e02b34fdb7c9f70474814081c30f86",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "start_sim_env.sh",
+      "sha256": "02a5002c6bc0f684150a1732ddfe424a5bf04c2c8162000aa69059b97fb49a41",
+      "modified_for_packaging": false
+    },
+    {
       "path": "toBuild.sh",
       "sha256": "cf9c83cbd253680277dc687e1d4d7eae65ba4c21d7043df60c2abb0d56e79e3d",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "tools/apply_semantic_markers.py",
+      "sha256": "33e43a838baf95dbf6586215c45b87679c22337824437cc9714cb1a0088223c7",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "tools/build_static_semantic_grid.py",
+      "sha256": "58b3ffb7e15e30e71f5b44fdc7a6822b2f4f21113c5f111c31f4ff84efded489",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "tools/check_2d_lidar.sh",
+      "sha256": "06fbedcca1af89fe73b5be89ffdcc21bd0ce68b68bd5e4da64b90d8b1467566b",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "tools/generate_maze40_map.py",
+      "sha256": "b071036e5a4d02e6d00eddcb5e2f09a74cb181c01e3ff3aea4b81ddbe8970af0",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "tools/generate_real_pgm_from_world.py",
+      "sha256": "6e1c2b33a71cf09babbef150f0cd6a4809bdcfc7495677b6e3668c678dfe5a75",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "tools/pick_world_points.py",
+      "sha256": "838fc1ec354610dc2bd895d6376b2d598fdc6cfb27cc2c714ae0a8e9d35fa9e4",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "tools/probe_semantic_chain.py",
+      "sha256": "393a66307bf5bd03d50cb4839caa394150b553ddd7b6b1a8d41dbbd0b7da4cea",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "\u5171\u4eab\u5145\u7535\u63a8\u7406\u6539\u9020\u8bf4\u660e.md",
+      "sha256": "0c10ec2135f3f1c03b59e169f59f783d3498dff7289925ab4f1d1771ffb22a0a",
+      "modified_for_packaging": false
+    },
+    {
+      "path": "\u6d88\u878d\u4e0e\u5bf9\u6bd4\u5b9e\u9a8c\u8fd0\u884c\u8bf4\u660e.md",
+      "sha256": "df0771abed0261655b95e969d3568fd6eb3e70c8cf439a711842ea40dc1a7558",
       "modified_for_packaging": false
     }
   ]
