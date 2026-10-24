@@ -1,4 +1,4 @@
-"""Independent fixed-weight feature ablations; reuse PACE mapping and navigation."""
+"""MAPPO-driven scoring-information ablations; reuse PACE mapping and navigation."""
 import math
 import os
 
@@ -31,6 +31,9 @@ def build_experiment(context):
         raise ValueError('All three battery capacities must be finite and positive (Ah)')
     if cfg['discharge_during_return'].lower() not in ('true', 'false'):
         raise ValueError('discharge_during_return must be true or false')
+    model_path = os.path.abspath(os.path.expanduser(cfg['mappo_model_path']))
+    if not os.path.isfile(model_path):
+        raise ValueError(f'MAPPO checkpoint does not exist: {model_path}')
 
     sim = get_package_share_directory('simulation_bringup')
     rl = get_package_share_directory('rl_training')
@@ -60,7 +63,8 @@ def build_experiment(context):
                 'weight_extremely_high': 10.0, 'weight_high': 8.0,
                 'weight_medium': 5.0, 'weight_low': 2.0,
                 'local_map_topic': f'/{name}/map', 'local_map_frame': f'{name}/map',
-                'wait_for_rl_weights': False,
+                'weight_topic': f'/{name}/rl_adjust_weights',
+                'wait_for_rl_weights': True,
             }],
             remappings=[('frontiers_info', '/frontiers_info'),
                         ('/frontier_priority_fuzzy', 'frontier_priority_fuzzy')],
@@ -100,9 +104,14 @@ def build_experiment(context):
         'metrics_csv_path': cfg['metrics_csv_path'],
         'metrics_summary_path': cfg['metrics_summary_path'],
     })
-    # Keep the original global-state and shared-charger nodes, with no actor.
+    # Use the same actor/global-state/charger entry as the full PACE launch.
     resource_coordination = include(rl, 'rl_training.launch.py', {
-        'robot_count': '3', 'robot_namespace': 'robot_', 'enable_weight_node': 'false',
+        'robot_count': '3', 'robot_namespace': 'robot_', 'enable_weight_node': 'true',
+        'policy_mode': 'mappo', 'model_path': model_path,
+        'infer_save_enabled': 'true', 'infer_save_root': cfg['infer_save_root'],
+        'infer_run_name': 'rl_infer', 'action_mode': 'auto',
+        'weight_topic_template': '/{robot_name}/rl_adjust_weights',
+        'weight_update_rate': '2.0', 'weight_log_interval': '2.0',
         'home_pose_path': poses_path,
     })
     goal_selector = Node(
@@ -129,6 +138,8 @@ def generate_launch_description():
     return LaunchDescription([
         DeclareLaunchArgument('map_variant', default_value='default', choices=list(SCENES)),
         DeclareLaunchArgument('ablation_mode', default_value='full', choices=list(MODES)),
+        DeclareLaunchArgument('mappo_model_path'),
+        DeclareLaunchArgument('infer_save_root'),
         # Explicit capacities avoid accidentally comparing different energy budgets.
         DeclareLaunchArgument('robot0_battery_capacity_ah'),
         DeclareLaunchArgument('robot1_battery_capacity_ah'),

@@ -15,7 +15,7 @@ METHODS = ('computeMembership', 'computeSemanticMembership', 'computeDistanceMem
 
 
 def method(source, name):
-    match = re.search(r'^    (?:std::map<std::string, double>|double) ' + name + r'\(',
+    match = re.search(r'^    (?:std::map<std::string, double>|double|void) ' + name + r'\(',
                       source, re.MULTILINE)
     if not match:
         raise AssertionError(f'Missing scoring method: {name}')
@@ -33,6 +33,7 @@ class ScoringTests(unittest.TestCase):
         old, new = ORIGINAL.read_text(), ABLATION.read_text()
         for name in METHODS:
             self.assertEqual(method(old, name), method(new, name), name)
+        self.assertEqual(method(old, 'weightsCallback'), method(new, 'weightsCallback'))
 
     @unittest.skipUnless(shutil.which('g++'), 'g++ is needed for the scoring check')
     def test_score_equivalence_information_removal_and_reference_mean(self):
@@ -78,6 +79,11 @@ int main() {
         std::array<double,4> first={-1,-1,-1,-1};
         for(int trial=0;trial<200;++trial) {
             std::array<double,4> x={uniform(rng),uniform(rng),uniform(rng),uniform(rng)};
+            // Exercise nonuniform policy outputs: a hardcoded fixed-weight
+            // scorer must not accidentally pass the full-PACE parity check.
+            double total=0;
+            for(double& weight:s.rl_weights_) { weight=uniform(rng); total+=weight; }
+            for(double& weight:s.rl_weights_) weight/=total;
             s.ablation_mode_="full";
             assert(std::abs(score(s,x,usable)-base(s,x,usable))<1e-12);
             for(size_t axis=0;axis<4;++axis) {

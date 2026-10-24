@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate and record a fixed-weight ablation before starting Gazebo."""
+"""Validate and record a MAPPO-driven scoring ablation before starting Gazebo."""
 import ast
 from datetime import datetime, timezone
 import hashlib
@@ -38,6 +38,18 @@ def main():
     if unknown:
         raise SystemExit(f'Unknown launch arguments: {sorted(unknown)}')
     effective = {**defaults, **overrides}
+    try:
+        model = Path(effective['mappo_model_path']).expanduser().resolve()
+    except KeyError:
+        raise SystemExit('Provide a MAPPO checkpoint with --model /path/to/best_model.pt')
+    if not model.is_file():
+        raise SystemExit(f'MAPPO checkpoint does not exist: {model}')
+    config_path = model.parent.parent / 'config.json'
+    if not config_path.is_file():
+        config_path = model.parent / 'config.json'
+    if not config_path.is_file():
+        raise SystemExit('Keep the matching config.json beside the model or its models/ directory')
+    effective['mappo_model_path'] = str(model)
     for rid in range(3):
         key = f'robot{rid}_battery_capacity_ah'
         try:
@@ -64,19 +76,22 @@ def main():
         'git_revision': git('rev-parse', 'HEAD') or None,
         'git_dirty': bool(git('status', '--porcelain')),
         'map': scene, 'ablation_mode': mode,
-        'weight_mode': 'fixed', 'weights': [0.25] * 4,
-        'mappo_inference_enabled': False, 'model_path': None,
+        'weight_mode': 'mappo_dynamic',
+        'mappo_inference_enabled': True, 'model_path': str(model),
+        'model_sha256': hashlib.sha256(model.read_bytes()).hexdigest(),
+        'model_config_sha256': hashlib.sha256(config_path.read_bytes()).hexdigest(),
         'reference_values': [0, 0.25, 0.5, 0.75, 1] if mode != 'full' else [],
         'aggregation': 'mean_of_final_scores' if mode != 'full' else 'original_score',
         'effective_arguments': effective,
         'source_sha256': {name: hashlib.sha256((root / name).read_bytes()).hexdigest()
                           for name in files},
         'command': ['ros2', 'launch', 'pace_ablation', 'feature_ablation.launch.py', *arguments],
-        'scope': 'Frontier scoring only; navigation, feasibility filtering and energy safety remain enabled.',
+        'scope': 'Scoring information only: the unchanged MAPPO actor still observes the original state. Navigation, feasibility filtering and energy safety remain enabled.',
     }
     target = Path(run_dir)
     target.mkdir(parents=True, exist_ok=True)
     (target / 'run_config.json').write_text(json.dumps(record, indent=2) + '\n')
+    (target / 'model_config.json').write_bytes(config_path.read_bytes())
 
 
 if __name__ == '__main__':

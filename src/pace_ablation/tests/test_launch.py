@@ -84,6 +84,8 @@ class LaunchParityTests(unittest.TestCase):
                             'astar_unknown_cost_multiplier': '100.0', 'astar_max_expansions': '150000',
                             'metrics_csv_path': '/tmp/test_metrics.csv',
                             'metrics_summary_path': '/tmp/test_summary.json',
+                            'mappo_model_path': str(ROOT / 'models/inference/mappo/mappo_v5_battery040_090_seed42/models/best_model.pt'),
+                            'infer_save_root': '/tmp/test_ablation',
                             'robot0_battery_capacity_ah': '.3', 'robot1_battery_capacity_ah': '.32',
                             'robot2_battery_capacity_ah': '.31', 'slam_delay_sec': '6',
                             'multi_explore_delay_sec': '26', 'fuzzy_delay_sec': '34',
@@ -105,8 +107,17 @@ class LaunchParityTests(unittest.TestCase):
                         self.assertEqual(old_nav.kwargs['remappings'], new_nav.kwargs['remappings'])
                         coordination = timers[3].kwargs['actions'][0]
                         args = dict(coordination.kwargs['launch_arguments'])
-                        self.assertEqual(args['enable_weight_node'], 'false')
+                        self.assertEqual(args['enable_weight_node'], 'true')
+                        self.assertEqual(args['policy_mode'], 'mappo')
+                        self.assertEqual(args['model_path'], values['mappo_model_path'])
+                        self.assertEqual(args['weight_topic_template'], '/{robot_name}/rl_adjust_weights')
+                        self.assertEqual(args['infer_save_root'], values['infer_save_root'])
                         self.assertEqual(args['home_pose_path'], values['home_pose_path'])
+                        scorer = next(n for n in new_nodes if n.kwargs.get('executable') == 'feature_ablation_node'
+                                      and n.kwargs['namespace'] == f'robot_{rid}')
+                        self.assertTrue(scorer.kwargs['parameters'][0]['wait_for_rl_weights'])
+                        self.assertEqual(scorer.kwargs['parameters'][0]['weight_topic'],
+                                         f'/robot_{rid}/rl_adjust_weights')
 
 
 if __name__ == '__main__':

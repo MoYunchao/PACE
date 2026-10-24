@@ -1,4 +1,4 @@
-// Independent feature-information ablation node, based on fuzzy_decision_node.cpp.
+// MAPPO-driven scoring-information ablation, based on fuzzy_decision_node.cpp.
 #include "rclcpp/rclcpp.hpp"
 #include "frontier_msgs/msg/frontier_array_extended.hpp"
 #include "fuzzy_msgs/msg/fuzzy_priority.hpp"
@@ -62,14 +62,14 @@ public:
         if (std::find(modes.begin(), modes.end(), ablation_mode_) == modes.end()) {
             throw std::invalid_argument("ablation_mode must be full|semantic|distance|gain|risk");
         }
-        RCLCPP_INFO(get_logger(), "Feature ablation: mode=%s fixed_weights=[0.25,0.25,0.25,0.25] references=[0,0.25,0.5,0.75,1]",
+        RCLCPP_INFO(get_logger(), "Feature ablation: mode=%s weights=MAPPO references=[0,0.25,0.5,0.75,1]",
                     ablation_mode_.c_str());
         tf_timeout_ = get_parameter("tf_timeout").as_double();
         tf_cache_time_ = get_parameter("tf_cache_time").as_double();
         local_map_topic_ = get_parameter("local_map_topic").as_string();
         local_map_frame_ = get_parameter("local_map_frame").as_string();
         weight_topic_ = get_parameter("weight_topic").as_string();
-        wait_for_rl_weights_ = false;  // This experiment never uses MAPPO weights.
+        wait_for_rl_weights_ = true;  // Every group requires the same MAPPO policy.
         distance_norm_max_ = get_parameter("distance_norm_max").as_double();
         semantic_score_min_ = get_parameter("semantic_score_min").as_double();
         semantic_score_max_ = get_parameter("semantic_score_max").as_double();
@@ -86,6 +86,10 @@ public:
         frontier_sub_ = this->create_subscription<frontier_msgs::msg::FrontierArrayExtended>(
             "/frontiers_info", 10,
             std::bind(&FeatureAblationNode::frontierCallback, this, std::placeholders::_1));
+
+        weights_sub_ = this->create_subscription<std_msgs::msg::Float32MultiArray>(
+            weight_topic_, 10,
+            std::bind(&FeatureAblationNode::weightsCallback, this, std::placeholders::_1));
 
         rl_weights_ = {0.25, 0.25, 0.25, 0.25};
         rl_weights_received_ = false;
@@ -104,6 +108,7 @@ public:
 
 private:
     rclcpp::Subscription<frontier_msgs::msg::FrontierArrayExtended>::SharedPtr frontier_sub_;
+    rclcpp::Subscription<std_msgs::msg::Float32MultiArray>::SharedPtr weights_sub_;
     rclcpp::Subscription<nav_msgs::msg::OccupancyGrid>::SharedPtr local_map_sub_;
     rclcpp::Publisher<fuzzy_msgs::msg::FuzzyPriorityArray>::SharedPtr priority_pub_;
 
@@ -483,6 +488,28 @@ private:
         numerator += output_mu.at("低") * weight_low_;
         denominator += output_mu.at("极高") + output_mu.at("高") + output_mu.at("中") + output_mu.at("低");
         return (denominator > 1e-6) ? numerator / denominator : 0.0;
+    }
+
+    void weightsCallback(const std_msgs::msg::Float32MultiArray::SharedPtr msg) {
+        if (msg->data.size() == 4) {
+            std::vector<double> weights(msg->data.begin(), msg->data.end());
+            bool invalid = false;
+            for (double& w : weights) {
+                if (!std::isfinite(w)) {
+                    invalid = true;
+                    break;
+                }
+                w = std::clamp(w, 0.0, 1.0);
+            }
+            if (invalid) {
+                RCLCPP_WARN(this->get_logger(), "RL权重存在非法值，将回退到中性权重");
+                weights = {0.5, 0.5, 0.5, 0.5};
+            }
+            rl_weights_ = weights;
+            rl_weights_received_ = true;
+        } else {
+            RCLCPP_WARN(this->get_logger(), "RL权重维度错误，期望4，实际%zu", msg->data.size());
+        }
     }
 
     double evaluateFeatureAblation(
